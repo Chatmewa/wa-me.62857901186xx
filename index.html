@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> ❤ Amelia is waiting ❤</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #e5ddd5;
+      font-family: Arial, sans-serif;
+    }
+    .wa-header {
+      background-color: #075e54;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+    }
+    .video-container {
+      position: relative;
+      text-align: center;
+      background-color: #000;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+    .continue-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      animation: shake 0.3s infinite;
+      z-index: 999;
+    }
+    @keyframes shake {
+      0% { transform: translateX(-50%) translateY(0); }
+      25% { transform: translateX(-50%) translateY(-2px); }
+      50% { transform: translateX(-50%) translateY(2px); }
+      75% { transform: translateX(-50%) translateY(-2px); }
+      100% { transform: translateX(-50%) translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wa-header">WhatsApp</div>
+
+  <div class="video-container">
+    <video id="mainVideo" autoplay muted loop playsinline>
+      <source src="https://i.imgur.com/RX4bvjn.mp4" type="video/mp4">
+      Maaf, browser kamu tidak mendukung video ini.
+    </video>
+  </div>
+
+  <button class="continue-button" onclick="goToAd()">Continue</button>
+
+  <script>
+    const video = document.getElementById('mainVideo');
+    const adLink = "https://www.profitableratecpm.com/jf3spyw7?key=b86d0ef790bba4687578d339e43c122d";
+
+    video.addEventListener('click', function () {
+      window.location.href = adLink;
+    });
+
+    function goToAd() {
+      window.location.href = adLink;
+    }
+  </script>
+
+</body>
+</html>
